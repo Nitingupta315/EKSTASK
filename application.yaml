@@ -52,7 +52,7 @@ spec:
          -  name: JOOMLA_DB_PASSWORD
             valueFrom:
                  secretKeyRef:
-                   name: my-secret
+                   name: secret
                    key : rpass
          -  name: JOOMLA_DB_NAME
             value: joomla      
