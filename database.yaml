@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: joomla-mariadb
+  name: joomaria
   labels:
     app: database
 spec:
@@ -52,7 +52,7 @@ spec:
       -  image: mariadb:10.1.45
          name: mydb
          env:
-         - name: MYSQL_ROOT_PASSWORD   #refer the docker hub for environmental variable of maridb
+         - name: MYSQL_ROOT_PASSWORD   
            valueFrom:
              secretKeyRef:
                name:  my-secret
