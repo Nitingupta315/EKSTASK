@@ -1,3 +1,5 @@
+
+#Service
 apiVersion: v1
 kind: Service
 metadata:
@@ -11,7 +13,7 @@ spec:
     app: joomla
     
   type: LoadBalancer
----
+#PersistentVolume
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -25,7 +27,7 @@ spec:
     requests:
       storage: 20Gi
 
----
+#Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
