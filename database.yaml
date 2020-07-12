@@ -64,7 +64,7 @@ spec:
          -  name: MYSQL_PASSWORD
             valueFrom:
                  secretKetRef:
-                   name: my-secret
+                   name: secretkey
                    key: upass
          -  name: MYSQL_DATABASE
             value: joomla
